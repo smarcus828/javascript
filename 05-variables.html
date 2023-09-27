@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Variables in JavaScript
+        </title>
+    </head>
+
+    <body>
+      <button title="slm_title" 
+        background.color = cyan 
+        onclick="console.log(`Quantity = ${quantity}`)">
+        Show Quantity
+      </button>
+
+      <button title="add 1" 
+        background.color = cyan 
+        onclick="quantity = quantity + 1;">
+        ADD 1
+      </button>
+
+      <button title="add 2"
+        background.color = cyan
+        onclick="quantity = quantity + 2;">
+        ADD 2
+      </button>
+
+      <button title="add 3"
+        background.color = cyan
+        onclick="quantity = quantity + 3;">
+        ADD 3
+      </button>
+
+      <button title="reset"
+        background.color = cyan
+        onclick="quantity = 0;
+        console.log(`Console was reset`);
+        console.log(`Quantity = ${quantity}`);
+        ">
+        Reset Cart
+      </button>
+
+
+      <script>
+        let quantity=0;
+
+
+
+        console.log("quantity: " + quantity);
+        
+
+
+      </script>
+    </body>
+
+</html>
