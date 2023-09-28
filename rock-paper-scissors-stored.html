@@ -24,10 +24,12 @@
 
       <button onclick="
         tally.reset();
+        localStorage.removeItem('score');
       ">RESET</button>  
  
       <script>
-        const tally = {
+                        
+        let tally = {
             wins: 0,
             losses: 0,
             ties: 0,
@@ -45,8 +47,23 @@
                 this.wins = 0;
                 this.losses = 0;
                 this.ties = 0;
+            },
+            setem: function(w=0,l=0,t=0){
+                this.wins = w;
+                this.losses = l;
+                this.ties = t;
             }
         }
+        
+    
+        let fromStor = JSON.parse(localStorage.getItem('score'));
+        if (!fromStor) {
+            tally.setem();
+        } else {
+        tally.setem(fromStor.wins, fromStor.losses, fromStor.ties);
+        }
+        
+                
 
         function playGame(userChoiceInput) {
             const compNum = Math.random();
@@ -109,6 +126,12 @@
                 }
 
             }
+
+            // Local Storage
+            localStorage.setItem('score', JSON.stringify(tally));
+
+
+            // Print Results
             console.log(`Result: ${result}`);
             console.log(`Wins: ${tally.wins}\nLosses: ${tally.losses}\nTies: ${tally.ties}`)
         }
