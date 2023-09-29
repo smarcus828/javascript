@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+        <style>
+ 
+            .cyan-button {
+                background-color: cyan;
+                border: 2px;
+                border-radius: 8px;
+                font-size: 20px;
+                padding: 20px 20px;
+            }
+        
+            .orange-button {
+                background-color: orange;
+                border: 2px;
+                border-radius: 8px;
+                font-size: 20px;
+                padding: 20px 20px;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+    <button class="orange-button"
+        onclick = setTitle("ONE");
+        >ONE</button>
+    <button class="orange-button"
+        onclick = change();
+        >TWO</button>
+    <button class="orange-button"
+        onclick = change4();
+        >THREE</button>
+    <button class="orange-button"
+        id = fourbutton 
+        onclick = setTitle("FOUR");
+        >FOUR</button>
+
+      <script>
+        function setTitle(str){
+            document.title = str;
+        }
+
+        function change(){
+            document.body.innerHTML = "<button>Good Job </button>";
+        }
+
+        function fetchButton(){
+            const b = document.querySelector('button');
+            console.log(b);
+        }
+
+        function changeButton(){
+            let b = document.querySelector(".cyan-button");
+            console.log(b);
+            b.textContent = "FLEEEB";
+            b.className = "orange-button";
+        }
+        
+        function change4(){
+            const bElement = document.getElementById('fourbutton');
+            console.log(bElement);
+            bElement.textContent = "FLARG";
+            bElement.className = "cyan-button";
+        }
+
+        
+      </script>
+    </body>
+
+</html>

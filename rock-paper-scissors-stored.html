@@ -8,7 +8,7 @@
 
     <body>
       <button onclick="
-        userChoice = 'ROCK';
+        userChoice = 'ROCK'; 
         playGame(userChoice);
         ">ROCK</button>
 
@@ -20,7 +20,7 @@
       <button onclick="
         userChoice = 'SCISSORS';
         playGame(userChoice);
-      ">SCISSORS</button>
+        ">SCISSORS</button>
 
       <button onclick="
         tally.reset();
@@ -34,7 +34,7 @@
             losses: 0,
             ties: 0,
                                    
-            addWin: function(){
+            addwin: function(){
                 this.wins ++ ;
             },
             addLoss: function(){
@@ -84,14 +84,14 @@
 
             console.log(`compChoice: ${compChoice}`);
 
-            // Decide Winner
+            // Decide winner
             if (userChoiceInput == 'ROCK'){
                 if (compChoice === 'PAPER'){
                     result = 'LOSS';
                     tally.addLoss();
                 } else if (compChoice === 'SCISSORS'){
-                    result = 'WIN';
-                    tally.addWin();
+                    result = 'win';
+                    tally.addwin();
                 } else {
                     result = 'TIE';
                     tally.addTie();
@@ -104,8 +104,8 @@
                     result = 'LOSS';
                     tally.addLoss();
                 } else if (compChoice === 'ROCK'){
-                    result = 'WIN';
-                    tally.addWin();
+                    result = 'win';
+                    tally.addwin();
                 } else {
                     result = 'TIE';
                     tally.addTie();
@@ -118,8 +118,8 @@
                     result = 'LOSS';
                     tally.addLoss();
                 } else if (compChoice === 'PAPER'){
-                    result = 'WIN';
-                    tally.addWin();
+                    result = 'win';
+                    tally.addwin();
                 } else {
                     result = 'TIE';
                     tally.addTie();
@@ -133,7 +133,7 @@
 
             // Print Results
             console.log(`Result: ${result}`);
-            console.log(`Wins: ${tally.wins}\nLosses: ${tally.losses}\nTies: ${tally.ties}`)
+            console.log(`wins: ${tally.wins}\nLosses: ${tally.losses}\nTies: ${tally.ties}`)
         }
 
 
