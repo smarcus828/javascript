@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Project</title>
+        <style>
+            .subscribe-button{
+                border: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>YouTube Subscribe Button</p>
+        <button onclick="
+            buttonElement = document.querySelector('.js-subscribe-button');
+            buttonElement.innerHTML = fixSubscribe(buttonElement.innerText);            
+        " class="js-subscribe-button subscribe-button"
+        >Subscribe</button>
+
+        <button 
+            onclick="console.log('something different')">
+        Something
+        </button>
+        
+
+      <script>
+        function fixSubscribe(inp){
+            if (inp === 'Subscribe'){
+                return 'Subscribed';
+            } else return 'Subscribe';
+
+        }
+
+
+      </script>
+    </body>
+
+</html>
