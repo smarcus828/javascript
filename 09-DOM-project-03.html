@@ -10,14 +10,38 @@
         <p> Shipping Calculator</p>
         <p> Orders under $40 - + $10 shipping</p>
         <p> Orders over $40 = FREE Shipping</p>
-        <input placeholder="Cost of Order">
-        <button>Calculate</button>
+        <input
+            placeholder="Cost of Order"
+            onkeydown="evaluateKey(event.key);"
+            type="number"
+            id='cost' >
+        <button
+            onclick="calculateTotal();
+        ">Calculate</button>
+        <p id='Total'
+        >Total Cost</p>
 
 
       
 
       <script>
-        
+        function calculateTotal() {
+            const inputElement=document.getElementById('cost');
+            let totalCost=Number(inputElement.value)
+            if (totalCost < 40){
+                totalCost=totalCost+ 10;
+            }
+
+            document.getElementById('Total').innerHTML = totalCost;
+        }
+
+        function evaluateKey(keyInput){
+            console.log(keyInput);
+            if (keyInput === "Enter")
+                calculateTotal();
+        }
+
+        window.console.log('lalalala');
 
 
       </script>
