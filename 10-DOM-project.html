@@ -5,7 +5,34 @@
         <style>
             .subscribe-button{
                 border: none;
+                padding: 10px;
+                background-color: rgb(74, 147, 74);
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 15px;
+                cursor: pointer;
+                margin-bottom: 15px;
             }
+
+            .cost-input{
+                background-color: rgb(194, 244, 115);
+                font-size: 15px;
+                padding: 10px;
+                
+            }
+
+            .calculate-button{
+                font-size: 15px;
+                font-weight: bold;
+                padding: 10px 50px;
+                background-color: rgb(115, 244, 128);
+                color: rgb(185, 22, 22);
+                border-style: double;
+                cursor: grab ;
+            }
+
+
         </style>
     </head>
     
@@ -17,8 +44,13 @@
         " class="js-subscribe-button subscribe-button"
         >Subscribe</button>
 
+        <p>Amazon Shipping Calculator</p>
+        <input class="cost-input"
+            placeholder="Buy me a chicken">
         <button 
-            onclick="console.log('something different')">
+            class="calculate-button"
+            onclick="console.log('something different')"
+            >
         Something
         </button>
         
