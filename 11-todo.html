@@ -28,10 +28,12 @@
       
       <p>Todo List 3</p>
       <input placeholder="Todo name" id="Input3">
-      <input type="date" placeholder="mm/yy/yyyy">
-      <button onclick="addToDo(document.getElementById('Input3').value )
+      <input type="date" id="dater">
+      <button onclick="addToDo(document.getElementById('Input3').value, document.getElementById('dater').value)
         document.getElementById('Input3').value = '';
         displayList()
+        console.log(document.getElementById('Input3').value)
+        console.log(document.getElementById('dater').value)
       ">Add</button>
 
     <div id="listdisplay"></div>
