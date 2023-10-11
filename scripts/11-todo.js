@@ -11,15 +11,15 @@ function displayList() {
   for (let i = 0; i < todoList.length; i++){
     const name = todoList[i].name;
     const due = todoList[i].dueDate;
-    HTMLlist += `<p>
-      ${name}
-      ${due} 
+    HTMLlist += `
+      <div>${name}</div>
+      <div>${due}</div>
       <button
         onclick="todoList.splice(${i},1);
         displayList();"
         class="stdbutton deletebutton"
-        > Delete </button>
-      <p>`
+      > Delete </button>
+      `
   }
   // console.log(todoList)
   // console.log(HTMLlist);
