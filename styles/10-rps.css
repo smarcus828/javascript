@@ -7,6 +7,12 @@ body{
 .title{
   font-size: 30px;
   font-weight: bold;
+  color: lightyellow;
+}
+
+.result{
+  font-size: 20ps;
+  font-weight: bold;
 }
 
 .move-icon{
@@ -17,4 +23,9 @@ border: 3px solid white;
 border-radius: 60px;
 margin-right: 10px;
 cursor: pointer;
+}
+
+.mybutton{
+  padding: 10px;
+  margin-top: 10px;
 }
