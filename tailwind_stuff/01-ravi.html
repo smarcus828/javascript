@@ -1,0 +1,52 @@
+<div class="group grid place-items-center h-20 w-20 bg-blue-400 hover:bg-purple-400"> 
+  <div class="h-5 w-5 bg-black group-hover:bg-red-600"> </div>
+  <div class="h-5 w-5 bg-black group-hover:bg-blue-600"> </div>
+ </div>
+
+ <div class="peer/name group/other-name grid place-items-center h-20 w-20 bg-blue-400 hover:bg-purple-400"> 
+  <div class="h-5 w-5 bg-black group-hover/other-name:bg-red-600"> </div>
+  <div class="h-5 w-5 bg-black group-hover/other-name:bg-blue-600"> </div>
+ </div>
+ <div class="h-20 w-20 bg-green-400 peer-hover/name:bg-orange-500"></div>
+
+ <!-- animation - fade in -->
+ <div class="peer/name group/other-name grid place-items-center h-20 w-20 bg-blue-400 hover:bg-purple-400 transition-colors duration-400"> 
+  <div class="h-5 w-5 bg-black group-hover/other-name:bg-red-600 transition-colors duration-400"> </div>
+  <div class="h-5 w-5 bg-black group-hover/other-name:bg-blue-600 transition-colors duration-400"> </div>
+ </div>
+ <div class="h-20 w-20 bg-green-400 peer-hover/name:bg-orange-500 transition-colors duration-400"></div>
+
+ <!-- Animate pulse -->
+ <span class="relative flex h-3 w-3">
+  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+  <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+</span>
+
+<div class="animate-pulse">Subscribe</div>
+ <div class="animate-bounce">Hit the</div>
+
+
+ <!-- Accomodating different screen sizes -->
+ <div class="md:block hidden">
+  <p>I will appear for device resolution > 768px
+</div>
+
+<div class="max-md:block hidden">
+  <p>I will appear for device resolution < 768px
+</div>
+
+<button class="my-2 bg-blue-500 rounded-lg px-4 py-2 text-white hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 active:bg-blue-800">
+  Click Me
+</button>
+
+<!-- Unordered list with colors -->
+<ul class="my-2 mx-4 space-y-2">
+  <LI class="first:bg-yellow-200">Item 1</L1>
+  <LI class="even:bg-blue-200 odd:bg-green-200">Item 2</L1>
+  <LI class="even:bg-blue-200 odd:bg-green-200">Item 3</L1>
+  <LI class="even:bg-blue-200 odd:bg-green-200">Item 4</L1>
+  <LI class="even:bg-blue-200 odd:bg-green-200">Item 5</L1>
+  <LI class="even:bg-blue-200 odd:bg-green-200">Item 6</L1>
+  <LI class="even:bg-blue-200 odd:bg-green-200">Item 7</L1>
+</ul>
+
