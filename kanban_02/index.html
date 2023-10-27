@@ -11,6 +11,33 @@
   <scropt src="todo.js" defer></scropt>
 </head>
 <body>
+  <div class="board">
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="New Todo"/>
+      <button type="submit">Add +</button>
+    </form>
+    <div class="lanes">
+      <div class="swim-lane" id="backlog-lane">
+        <h3 class="heading">Backlog</h3>
+        <p class="task" draggable="true">Get Groceries</p>
+        <p class="task" draggable="true">Feed the dog</p>
+        <p class="task" draggable="true">Mow the lawn</p>
+      </div>
+      <div class="swim-lane" id="on-deck-lane">
+        <h3 class="heading">On Deck</h3>
+        <p class="task" draggable="true">Get dog</p>
+        <p class="task" draggable="true">Feed the Groceries</p>
+        <p class="task" draggable="true">Mow the chickens</p>
+      </div>
+      <div class="swim-lane" id="in-progress-lane">
+        <h3 class="heading">In Progress</h3>
+        <p class="task" draggable="true">Get Groceries</p>
+        <p class="task" draggable="true">Feed the dog</p>
+        <p class="task" draggable="true">Mow the lawn</p>
+      </div>
+    </div>
+
+  </div>
   
 </body>
 </html>
