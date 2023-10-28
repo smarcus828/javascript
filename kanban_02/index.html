@@ -1,43 +1,44 @@
+<!-- https://www.youtube.com/watch?v=ecKw7FfikwI&list=PLfKprPOTD0qBxlh-90QUSBvDwPra4S5hN&index=2 -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drag and Drop 02</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop 02</title>
 
-  <link rel="stylesheet" href="styles.css" />
-  <script src="drag.js" defer></script>
-  <scropt src="todo.js" defer></scropt>
-</head>
-<body>
-  <div class="board">
-    <form id="todo-form">
-      <input type="text" id="todo-input" placeholder="New Todo"/>
-      <button type="submit">Add +</button>
-    </form>
-    <div class="lanes">
-      <div class="swim-lane" id="backlog-lane">
-        <h3 class="heading">Backlog</h3>
-        <p class="task" draggable="true">Get Groceries</p>
-        <p class="task" draggable="true">Feed the dog</p>
-        <p class="task" draggable="true">Mow the lawn</p>
-      </div>
-      <div class="swim-lane" id="on-deck-lane">
-        <h3 class="heading">On Deck</h3>
-        <p class="task" draggable="true">Get sssss</p>
-        <p class="task" draggable="true">Feed the Groceries</p>
-        <p class="task" draggable="true">Mop the chickens</p>
-      </div>
-      <div class="swim-lane" id="in-progress-lane">
-        <h3 class="heading">In Progress</h3>
-        <p class="task" draggable="true">Get Groceries</p>
-        <p class="task" draggable="true">Feed the bear and prove that she is a happy and just dog</p>
-        <p class="task" draggable="true">Mow the lawn</p>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+    <scropt src="todo.js" defer></script>
+  </head>
+  <body>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="New Todo" id="todo-input"  />
+        <button type="submit">Add +</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">Backlog</h3>
+          <p class="task" draggable="true">Get Gfffffff</p>
+          <p class="task" draggable="true">Feed the dog</p>
+          <p class="task" draggable="true">Mow the lawn</p>
+        </div>
+        <div class="swim-lane" >
+          <h3 class="heading">On Deck</h3>
+          <p class="task" draggable="true">Get ssdfsdfsdf</p>
+          <p class="task" draggable="true">Feed the Groceries</p>
+          <p class="task" draggable="true">Embellish the chickens</p>
+        </div>
+        <div class="swim-lane" >
+          <h3 class="heading">In Progress</h3>
+          <p class="task" draggable="true">Get Groceries</p>
+          <p class="task" draggable="true">Feed the bear and prove that she is a happy and just dog</p>
+          <p class="task" draggable="true">Mow the lawn</p>
+        </div>
       </div>
     </div>
-
-  </div>
-  
-</body>
+  </body>
 </html>

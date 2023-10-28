@@ -1,3 +1,4 @@
+
 *{
   padding: 0;
   margin: 0;
@@ -8,11 +9,11 @@
   scrollbar-width: none;
 }
 
-*::-webkit-scrollbar{
-  display none;
+*::-webkit-scrollbar {
+  display: none;
 }
 
-.board{
+.board {
   width: 100%;
   height: 100vh;
   overflow: scroll;
@@ -41,7 +42,7 @@
   outline: none;
 }
 
-#todo-form button{
+#todo-form button {
   padding: 12px 32px;
 
   border-radius: 4px;
@@ -54,7 +55,6 @@
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
-
 }
 
 .lanes{
@@ -75,7 +75,7 @@
   margin-bottom: 8px;
 }
 
-.swim-lane{
+.swim-lane {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -91,10 +91,10 @@
   flex-shrink: 0;
 }
 
-.task{
+.task {
   background: white;
   color: black;
-  box-shadow: 0px, 5px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 
   padding: 12px;
   border-radius: 4px;
@@ -103,9 +103,9 @@
   cursor: move;
 }
 
-.is-dragging{
+.is-dragging {
   scale: 1.05;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-  background-color: rgb(50, 50, 50);
+  background: rgb(50, 50, 50);
   color: white;
 }
