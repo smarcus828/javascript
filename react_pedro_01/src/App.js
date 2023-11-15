@@ -1,17 +1,27 @@
 import './App.css';
+import {User} from './User';
 
 function App() {
 
   // const age = 19;
   // const isGreen = true;
-  const names = ["Fred", "Barney", "Wilma", "Betty", "Pebbles"];
+  // const names = ["Fred", "Barney", "Wilma", "Betty", "Pebbles"];
+  const users = [
+    { name: "Pedro", age: 22 },
+    { name: "Barney", age: 99 },
+    { name: "Fred", age: 88 },
+  ];
 
 
   return (
     <div classname="App">
-      <h1>{names[2]}</h1> 
+      {users.map((user, key) => {
+          return <User name={user.name} age={user.age} />;
+      })}
     </div>
   );
+}
+
 
   // return (
     // Example 3
@@ -33,7 +43,7 @@ function App() {
     //   {isGreen && <button>This is a button</button>}
     // </div>
   // );
-}
+
 
 
 // const User = (props) => {

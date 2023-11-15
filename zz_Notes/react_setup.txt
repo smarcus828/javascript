@@ -1,0 +1,13 @@
+create directory
+npx create-react-app .   // Happy Hacking at the end
+  under src - delete
+    setupTests.js
+    reportWebVitals.js
+    logo.svg
+    index.css
+    App.test.js
+  leaves you with App.css, App.js and index.js under src
+  remove import statements from index.jss and reportWebVitals at the end
+  in App.js, remove import logo and the guts out of the return stanza
+    everything between the <div>s
+nmp start               // starts server at port 3000
