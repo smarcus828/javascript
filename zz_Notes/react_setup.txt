@@ -10,4 +10,4 @@ npx create-react-app .   // Happy Hacking at the end
   remove import statements from index.jss and reportWebVitals at the end
   in App.js, remove import logo and the guts out of the return stanza
     everything between the <div>s
-nmp start               // starts server at port 3000
+npm start               // starts server at port 3000
