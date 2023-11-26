@@ -7,7 +7,7 @@ npx create-react-app .   // Happy Hacking at the end
     index.css
     App.test.js
   leaves you with App.css, App.js and index.js under src
-  remove import statements from index.jss and reportWebVitals at the end
+  In App.css, remove import statements from index.jss and reportWebVitals at the end
   in App.js, remove import logo and the guts out of the return stanza
     everything between the <div>s
 npm start               // starts server at port 3000
